@@ -15,5 +15,21 @@ public class Principal {
 	String json = conexao.endPoint("");
 	Gson gson = new Gson();
 	Cnpj cnpj = gson.fromJson(json, Cnpj.class);
+	
+	public void consulta() {
+		
+		
+		System.out.println("Digite os númros do seu CNPJ sem (- ou /)" );
+		var resposta = leitura.nextLine();
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
 
 }

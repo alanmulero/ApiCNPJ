@@ -18,7 +18,7 @@ public class CnpjApiApplication implements CommandLineRunner{
 		// Instanciando.
 		
 		Principal principal = new Principal();
-		
+		principal.consulta();
 		
 		
 	}
