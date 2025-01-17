@@ -14,7 +14,7 @@ public class Conexao {
 
 		HttpClient client = HttpClient.newHttpClient();
 
-		HttpRequest request = HttpRequest.newBuilder().uri(URI.create("http://foo.com/")).build();
+		HttpRequest request = HttpRequest.newBuilder().uri(URI.create(url)).build();
 
 		// HttpResponse:
 		HttpResponse<String> response = null;
@@ -27,8 +27,9 @@ public class Conexao {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
-		return null;
+		
+		String json = response.body();
+		return json;
 
 	}
 

@@ -1,6 +1,11 @@
 package br.com.cnpj.cnpjApi.model;
 
-public record Cnpj(String cnpj, String razao_social, String nome_fantasia, String descricao_situacao_cadastral, String data_inicio_atividade,
-		String uf, String municipio) {
+
+
+
+public record Cnpj(String porte ,String uf,String razao_social, String bairro, String municipio, String opcao_pelo_mei,
+		String cnae_fiscal_descricao, String descricao_situacao_cadastral) {
+	
+	
 
 }

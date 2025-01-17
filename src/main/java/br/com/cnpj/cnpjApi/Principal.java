@@ -11,18 +11,21 @@ public class Principal {
 	
 	
 	Conexao conexao = new Conexao();
+	String json = conexao.endPoint("https://brasilapi.com.br/api/cnpj/v1/27049688000150");
 	Scanner leitura = new Scanner(System.in);
-	String json = conexao.endPoint("");
 	Gson gson = new Gson();
 	Cnpj cnpj = gson.fromJson(json, Cnpj.class);
+	
+	
 	
 	public void consulta() {
 		
 		
 		System.out.println("Digite os númros do seu CNPJ sem (- ou /)" );
-		var resposta = leitura.nextLine();
+		//var resposta = leitura.nextLine();
 		
 		
+		System.out.println(cnpj);
 		
 		
 		
