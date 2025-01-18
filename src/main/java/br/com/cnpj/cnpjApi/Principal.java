@@ -20,6 +20,9 @@ public class Principal {
 
 		System.out.println("Digite os númros do seu CNPJ sem (- ou /)");
 		var resposta = leitura.nextLine();
+		if(!resposta.matches("\\d+")) {
+			System.out.println("Digite apenas números.");
+		}
 		String json = conexao.endPoint(endereco + resposta);
 
 		System.out.println(json);
